@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": "4ffccdaa-6818-4a84-9026-5e43b64b5b1a",
+      "name": "Бородинский хлеб с байкальской водой",
+      "manufacturer": "Хлебная русь богатырская",
+      "image": "https://ncipkjvtmtwvmqrgzllh.supabase.co/storage/v1/object/public/Asmund/Images/bread.jpg",
+      "type": "Grocery",
+      "weight": 1,
+      "calories": 2000
+    },
+    {
+      "id": "9fefe37f-0339-4c1d-a1ab-3f83cf5bc0e7",
+      "name": "Детское масло с добавлением перца чили",
+      "image": "https://ncipkjvtmtwvmqrgzllh.supabase.co/storage/v1/object/public/Asmund/Images/babyOil.jpeg",
+      "manufacturer": "Адское лукошко",
+      "type": "Medicine",
+      "weight": 0.25,
+      "isRequrePrescription": true
+    },
+    {
+      "id": "1f550deb-06e9-46e3-a71c-2f1ff2a6e4af",
+      "name": "Пояс из медвежей шерсти",
+      "image": "https://ncipkjvtmtwvmqrgzllh.supabase.co/storage/v1/object/public/Asmund/Images/bear-belt.jpeg",
+      "manufacturer": "Полтора медведя",
+      "type": "Clothes",
+      "weight": 25,
+      "size": "3XL"
+    }
+  ]
+}
