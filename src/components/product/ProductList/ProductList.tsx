@@ -20,20 +20,6 @@ export const ProductList = () => {
     eventEmitter.emit(PRODUCT_ADD_TO_CART_EVENT_NAME, product);
   };
 
-  const getProductExtra = (product: Product) => {
-    if (product.type === "Grocery") {
-      return `Калории: ${product.calories}`;
-    }
-
-    if (product.type === "Medicine") {
-      return `Рецертурный: ${product.isRequrePrescription ? "Да" : "Нет"}`;
-    }
-
-    if (product.type === "Clothes") {
-      return `Размер: ${product.size}`;
-    }
-  };
-
   return (
     <Flex direction="column" gap={"2"}>
       {products.map((item) => (
@@ -42,7 +28,7 @@ export const ProductList = () => {
           productName={item.name}
           image={item.image}
           manufacturer={item.manufacturer}
-          extra={getProductExtra(item)}
+          extra={"Доп поля (пункт 1 из постановки)"}
           onAddToCart={() => handleAddToCart(item)}
         />
       ))}
