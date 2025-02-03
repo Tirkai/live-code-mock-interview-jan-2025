@@ -2,8 +2,9 @@ import { Flex } from "@radix-ui/themes";
 import { useMemo, useState, useEffect } from "react";
 import { PRODUCT_ADD_TO_CART_EVENT_NAME } from "../../../const";
 import { useEventEmitter } from "../../../context/EventEmitterContext";
-import { ProductService, Product } from "../../../service/ProductService";
+import { ProductService } from "../../../service/ProductService";
 import { ProductCard } from "../ProductCard/ProductCard";
+import { Product } from "../../../types";
 
 export const ProductList = () => {
   const productService = useMemo(() => new ProductService(), []);
