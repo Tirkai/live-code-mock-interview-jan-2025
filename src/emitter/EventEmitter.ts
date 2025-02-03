@@ -1,5 +1,5 @@
-type Handler = unknown;
-type HandlerPayload = unknown;
+type Handler = (payload: HandlerPayload) => void;
+type HandlerPayload = Record<string, any> | undefined;
 
 // Необходимо реализовать. Пункт 2 из постановки
 export class EventEmitter {
